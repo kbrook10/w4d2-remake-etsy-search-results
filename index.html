@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remake Etsy Search Results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <script src="https://use.fontawesome.com/bfd4e076b7.js"></script>
+  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/global.css" />
+</head>
+<body>
+  <!-- Content goes here. -->
+  <header>
+    <!-- This STARTS the navigation bar within the header -->
+    <br>
+    <div class="container">
+      <div class="row">
+        <!-- This STARTS the left side of the navigation bar within the header -->
+        <div class="col-sm-6 text-left">
+          <span><img src="img/etsylogo.png" alt="Etsy logo" class="d-inline" width="40"/></span>
+          <span id="searchResults" class="input-group d-inline">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span>Go!</span>
+            </button>
+            </button>
+          </span>
+        </div>
+        <!-- This is the END of the left side of the navigation bar within the header -->
+        <!-- This STARTS the right side of the navigation bar within the header -->
+        <div class="col-sm-6 text-right">
+          <a href="#">Sell on Etsy</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Register</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Sign In</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Cart<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a> &nbsp;&nbsp;&nbsp;
+        </div>
+        <!-- This is the END of the right side of the navigation bar within the header -->
+      </div>
+    </div>
+    <br>
+    <!-- This ENDS the navigation bar within the header -->
+    <!-- This STARTS the MENU bar within the header -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a href="#">Clothing & Accessories</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Jewelry</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Craft Supplies & tools</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Weddings</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Entertainment</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Home & Living</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Kids & Baby</a> &nbsp;&nbsp;&nbsp;
+          <a href="#">Vintage</a> &nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- This ENDS the MENU bar within the header -->
+  </header>
+  <main>
+    <!-- This STARTS the main body that has left side-bar (e.g. search & results) and a right search result images -->
+    <br>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <span>Show results for:</span>
+            <div class="allCategories">
+              <span>All categories</span>
+              <ul class="list-unstyled">
+                <a href="#"><li>&nbsp;&nbsp;Item1</li></a>
+                <a href="#"><li>&nbsp;&nbsp;Item1</li></a>
+                <a href="#"><li>&nbsp;&nbsp;Item1</li></a>
+              </ul>
+            </div>
+            <!-- End of All Categories section -->
+            <!-- START of Refine Your Search section -->
+            <div>
+              <span>Shop location</span>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>Anywhere
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2" checked>United States
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id="searchResults" class="col-sm-9">
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts go here. -->
+  <script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>
