@@ -125,3 +125,7 @@ main {
 #box8 {
   background-color: #FFFFFF;
 }
+
+.mn-sec-searchArea {
+  padding: 3px 15px;
+}

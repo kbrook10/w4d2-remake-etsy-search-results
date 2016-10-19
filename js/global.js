@@ -29,10 +29,34 @@ container.appendChild(rows)
 function createResultCard(item) {
 
   var card = document.createElement('div')
-  card.className('card col-sm-3')
+  card.className = 'card col-sm-3'
 
   var cardImage = document.createElement('img')
   cardImage.setAttribute('src', item.image)
+  cardImage.setAttribute('alt', 'card image cap')
+  cardImage.setAttribute('width', '100%')
+  cardImage.className = 'card-img-top'
+  cardImage.style.textOverflow = 'ellipsis'
+  card.appendChild(cardImage)
+
+  var cardBlock = document.createElement('div')
+  cardBlock.classList.add('card-block')
+  card.appendChild(cardBlock)
+
+  var cardText = document.createElement('p')
+  cardText.className = 'card-title small'
+  cardText.innerHTML = item.title
+  cardBlock.appendChild(cardText)
+
+  var cardFootText = document.createElement('col-sm-6')
+  cardFootText.className = 'card-text text-left col-sm-6 small text-muted'
+  cardFootText.innerHTML = item.seller
+  cardBlock.appendChild(cardFootText)
+
+  var cardFootCurr = document.createElement('col-sm-6')
+  cardFootCurr.className = 'card-text text-right col-sm-6 small'
+  cardFootCurr.innerHTML = item.price
+  cardBlock.appendChild(cardFootCurr)
 
   document.querySelector('#searchResults').appendChild(card)
 }
@@ -88,7 +112,7 @@ function createResultCard(item) {
 // Don't forget you can use a for() loop, or make an array of objects even and use a items.forEach() loop.
 var arrayObjects = [
   {
-    image: /*'img/boardgame.jpg'*/'http://unsplash.it/100?image=1',
+    image: /*'img/boardgame.jpg'*/'http://unsplash.it/178?image=1',
     title: '01Vintage Board Game Art Wall Home Decor',
     seller: '01franz66',
     price: '$' + 10.00
