@@ -31,6 +31,10 @@ main{
 .hr-nav_bg{
     background-color: $colorWhite;
 }
+// #hr-nav-searchFor{
+//     width: 10px;
+// }
+
 .hr-nav-btm{
     padding-left: 35px;
     padding-bottom: 10px;
@@ -59,7 +63,13 @@ main{
         text-decoration: none;
         color: #0192B5;
     }
+    li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
+
+
 .hr-nav-signIn{
     border: 1px solid #34A8C4;
     border-radius: 5px;
@@ -123,6 +133,8 @@ main{
 .mn-sec-searchArea{
     padding: 3px 15px;
 }
-
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+}
 
 //This is for the footer section styling

@@ -44,7 +44,7 @@ function createResultCard(item) {
   card.appendChild(cardBlock)
 
   var cardText = document.createElement('p')
-  cardText.className = 'card-title small'
+  cardText.className = 'card-title small overflow-ellipsis'
   cardText.innerHTML = item.title
   cardBlock.appendChild(cardText)
 
