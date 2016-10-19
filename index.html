@@ -16,37 +16,34 @@
   <!-- Content goes here. -->
   <header>
     <!-- This STARTS the navigation bar within the header -->
-    <br>
-    <div class="container">
+    <div class="container-fluid hr-nav_bg">
       <div class="row">
         <!-- This STARTS the left side of the navigation bar within the header -->
         <div class="col-sm-6 text-left">
-          <span><img src="img/etsylogo.png" alt="Etsy logo" class="d-inline" width="40"/></span>
-          <span id="searchResults" class="input-group d-inline">
-            <input type="text" class="form-control" placeholder="Search for...">
+          <img src="img/etsylogo.png" alt="Etsy logo" class="etsyLogo col-sm-1"/>
+          <span class="input-group col-sm-6 hr-nav-search">
+            <input type="text" class="form-control" width="10" placeholder="Search for..." />
             <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span>Go!</span>
-            </button>
-            </button>
+              <button class="btn btn-default hr-nav-btn" type="button">Search!</button>
+            </span>
           </span>
         </div>
         <!-- This is the END of the left side of the navigation bar within the header -->
         <!-- This STARTS the right side of the navigation bar within the header -->
         <div class="col-sm-6 text-right">
-          <a href="#">Sell on Etsy</a> &nbsp;&nbsp;&nbsp;
-          <a href="#">Register</a> &nbsp;&nbsp;&nbsp;
-          <a href="#">Sign In</a> &nbsp;&nbsp;&nbsp;
-          <a href="#">Cart<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a> &nbsp;&nbsp;&nbsp;
+          <ul class="list-inline hr-nav-login">
+            <li><a href="#">Sell on Etsy</a></li> &nbsp;
+            <li><a href="#">Register</a></li> &nbsp;
+            <li><a href="#" class="hr-nav-signIn">Sign In</a></li> &nbsp;
+            <li><a href="#">Cart<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li> &nbsp;
+          </ul>
         </div>
         <!-- This is the END of the right side of the navigation bar within the header -->
       </div>
-    </div>
-    <br>
-    <!-- This ENDS the navigation bar within the header -->
     <!-- This STARTS the MENU bar within the header -->
-    <div class="container">
+      <hr>
       <div class="row">
-        <div class="col-sm-12 text-center">
+        <div class="col-sm-12 text-left hr-nav-btm">
           <a href="#">Clothing & Accessories</a> &nbsp;&nbsp;&nbsp;
           <a href="#">Jewelry</a> &nbsp;&nbsp;&nbsp;
           <a href="#">Craft Supplies & tools</a> &nbsp;&nbsp;&nbsp;
@@ -57,9 +54,9 @@
           <a href="#">Vintage</a> &nbsp;&nbsp;&nbsp;
         </div>
       </div>
-    </div>
-    <br>
     <!-- This ENDS the MENU bar within the header -->
+    </div>
+    <!-- This ENDS the navigation bar within the header -->
   </header>
   <main>
     <!-- This STARTS the main body that has left side-bar (e.g. search & results) and a right search result images -->
@@ -67,20 +64,31 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <span>Show results for:</span>
-            <div class="allCategories">
-              <span>All categories</span>
+          <div class="col-sm-3 text-left mn-sec-left">
+            <strong><p><span class="text-capitalize">show</span> results for:</p></strong>
+            <div class="col-sm-12 text-left mn-sec-sideBar-top">
+              <strong><p>All categories</p></strong>
               <ul class="list-unstyled">
-                <a href="#"><li>&nbsp;&nbsp;Item1</li></a>
-                <a href="#"><li>&nbsp;&nbsp;Item1</li></a>
-                <a href="#"><li>&nbsp;&nbsp;Item1</li></a>
+                <li><a href="#">&nbsp;&nbsp;Toys & Games</a></li>
+                <li><a href="#">&nbsp;&nbsp;Art & Collectibles</a></li>
+                <li><a href="#">&nbsp;&nbsp;Craft Supplies & Tools</a></li>
+                <li><a href="#">&nbsp;&nbsp;Home & Living</a></li>
+                <li><a href="#">&nbsp;&nbsp;Books, Movies & Music</a></li>
+                <li><a href="#">&nbsp;&nbsp;Paper & Party Supplies</a></li>
+                <li><a href="#">&nbsp;&nbsp;Accessories</a></li>
+                <li><a href="#">&nbsp;&nbsp;Clothing</a></li>
+                <li><a href="#">&nbsp;&nbsp;Electronics & Accessories</a></li>
+                <li><a href="#">&nbsp;&nbsp;Jewerly</a></li>
+                <li><a href="#">&nbsp;&nbsp;Weddings</a></li>
+                <li><a href="#">&nbsp;&nbsp;Bags & Purses</a></li>
               </ul>
             </div>
             <!-- End of All Categories section -->
             <!-- START of Refine Your Search section -->
-            <div>
-              <span>Shop location</span>
+            <br>
+            <br>
+            <strong><p><span class="text-capitalize">refine</span> your search</p></strong>
+            <div class="col-sm-12 text-left mn-sec-sideBar-btm">
               <div class="radio">
                 <label>
                   <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>Anywhere
@@ -88,9 +96,97 @@
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2" checked>United States
+                  <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">United States
                 </label>
               </div>
+              <a href="#">Choose a custom location</a>
+              <hr>
+              <!-- Item type section Start -->
+              <p><strong>Item type</strong></p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3">All items
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios4" id="optionsRadios4" value="option4">Handmade
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios5" id="optionsRadios5" value="option5" checked>Vintage
+                </label>
+              </div>
+              <hr>
+              <!-- End of Item type section -->
+              <!-- Start of Price section Start -->
+              <p><strong>Price ($)</strong></p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios6" id="optionsRadios6" value="option6" checked>Any price
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios7" id="optionsRadios7" value="option7">Under $10
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios8" id="optionsRadios8" value="option8">$10 to $20
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios9" id="optionsRadios9" value="option9">$20 to $30
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios10" id="optionsRadios10" value="option10">Over $30
+                </label>
+              </div>
+              <hr>
+              <!-- End of Price section -->
+              <!-- Start of Filter by color section Start -->
+              <p><strong>Filter by color</strong></p>
+              <div class="mn-sec-sideBar-fbc">
+                <div class="boxProp" id="box1"><a href="#"></a></div>
+                <div class="boxProp" id="box2"><a href="#"></a></div>
+                <div class="boxProp" id="box3"><a href="#"></a></div>
+                <div class="boxProp" id="box4"><a href="#"></a></div>
+                <div class="boxProp" id="box5"><a href="#"></a></div>
+                <div class="boxProp" id="box6"><a href="#"></a></div>
+                <div class="boxProp" id="box7"><a href="#"></a></div>
+                <div class="boxProp" id="box8"><a href="#"></a></div>
+              </div>
+              <hr>
+              <!-- End of Filter by color section -->
+              <!-- Start of Ordering options-->
+              <p><strong>Ordering options</strong></p>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1"><a href="#">Accepts Etsy gift cards</a>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2"><a href="#">Customizable</a>
+                </label>
+              </div>
+              <hr>
+              <!-- End of Ordering options section -->
+              <!-- Start of Ship to section-->
+              <p><strong>Ship to</strong></p>
+              <select class="form-control">
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Thailand</option>
+                <option>China</option>
+                <option>France</option>
+              </select>
+              <!-- End of Ship to section -->
             </div>
           </div>
           <div id="searchResults" class="col-sm-9">

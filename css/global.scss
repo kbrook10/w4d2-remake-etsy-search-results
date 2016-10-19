@@ -1,4 +1,123 @@
+$colorDefault: #F5F5F1;
+$colorWhite: #FFFFFF;
+
 *{
     box-sizing: border-box;
-    border: 1px dashed grey;
+    // border: 1px dashed grey;
 }
+
+//This is the generic styling
+body{
+    background-color: $colorDefault;
+}
+body html{
+    width: 100%;
+}
+header{
+    box-shadow: 0px 2px 10px #888;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+main{
+    padding-top: 20px;
+}
+
+//This is for the body section styling
+
+
+//This is for the header section styling
+.hr-nav_bg{
+    background-color: $colorWhite;
+}
+.hr-nav-btm{
+    padding-left: 35px;
+    padding-bottom: 10px;
+
+    a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #777777;
+    }
+}
+.etsyLogo{
+    width: 120px;
+    padding-top: 8px;
+}
+.hr-nav-search{
+    padding-top: 10px;
+}
+.hr-nav-btn{
+    background-color: #34A8C4;
+    color: $colorWhite;
+}
+.hr-nav-login{
+    font-size: 12px;
+    padding-top: 20px;
+    a{
+        text-decoration: none;
+        color: #0192B5;
+    }
+}
+.hr-nav-signIn{
+    border: 1px solid #34A8C4;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+//This is for the main section styling
+.mn-sec-sideBar-top, .mn-sec-sideBar-btm{
+    border: 1px solid #E1E3DF;
+    border-radius: 5px;
+    background-color: $colorWhite;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    li{
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+    }
+    a{
+        text-decoration: none;
+        color: #0192B5;
+    }
+}
+//Styling for the color blocks in the filter by color section of the sidebar
+.mn-sec-sideBar-fbc{
+
+}
+
+.boxProp{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    display: inline-block;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: #FF7F00;
+}
+#box3{
+    background-color: #F3CC0C;
+}
+#box4{
+    background-color: #0AC20A;
+}
+#box5{
+    background-color: #0CCCF3;
+}
+#box6{
+    background-color: #A60CF3;
+}
+#box7{
+    background-color: #000000;
+}
+#box8{
+    background-color: #FFFFFF;
+}
+
+
+//This is for the footer section styling
